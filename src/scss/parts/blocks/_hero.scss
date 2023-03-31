@@ -1,0 +1,116 @@
+.hero {
+	
+	margin-top: 50px;
+	position: relative;
+
+	.element2c {
+		display: none;
+	}
+	
+	&__content {
+		margin-top: 20px;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+    &__text {
+		color: $menu-font-color;
+	}
+	
+	&__header, &__text {
+		margin-bottom: 20px;
+	}
+
+	&__header {
+		font-size: 24px;
+	}
+	
+	.button {
+		display: inline-block;
+	}
+	
+	img {
+		max-height: 200px;
+	}
+
+	
+	@media screen and (min-width: $lg-break-point) {
+		
+		margin-top: 160px;
+		// &__container  {
+        // position: relative;
+        // display: flex;
+        // flex-direction: row;
+        // width: $lg-container-width;
+        // height: 40px;
+        // align-items: flex-start;
+        // margin: 0 auto;
+    	// }
+		.element2c {
+			display: block;
+			position: absolute;
+			top: -130px;
+			left: 10px;
+		}
+
+		&__content {
+			flex: 0 0 50%;
+			max-width: 50%;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		
+			&__header {
+				font-size: 48px;
+				line-height: 56px;
+				font-weight: 700;
+			}
+			
+			&__text {
+				margin-bottom: 50px;
+				padding-right: 50px;
+				max-width: initial;
+				
+			}
+			
+		
+		&__image {
+			flex: 0 0 50%;
+			max-width: 50%;
+			// padding-top: 70px;
+		}
+		
+		img {
+			max-height: none;
+		}
+	}
+
+	@media screen and (min-width: $xl-break-point)  {
+
+
+			&__content {
+				flex: 0 0 40%;
+				max-width: 40%;
+				animation: slideFromLeft 0.6s ease-in;
+			}
+				
+				&__text {
+					margin-bottom: 50px;
+					padding-right: 50px;
+				}
+				
+			
+			&__image {
+				flex: 0 0 60%;
+				max-width: 60%;
+                margin-top: -90px;
+			}
+
+			&__image img {
+				animation: slideFromRight 0.6s ease-in;
+			}
+		
+		}
+	
+	
+}

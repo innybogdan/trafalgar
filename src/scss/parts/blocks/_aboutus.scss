@@ -1,0 +1,97 @@
+.about-us {
+
+    // margin-top: 50px;
+
+    .about-us__container {
+        position: relative;
+    }
+
+    .main-content__description-header {
+        font-size: 24px;
+    }
+
+    .card-deck {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 5px;
+    }
+
+    .card {
+ 
+        padding: 20px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0px 8px 39px -5px rgba(0,0,0,0.29);
+        -webkit-box-shadow: 0px 8px 39px -5px rgba(0,0,0,0.29);
+        -moz-box-shadow: 0px 8px 39px -5px rgba(0,0,0,0.29);
+
+        &-body {
+            padding: 0;
+            margin-top: 40px;
+            .card-title {
+                font-size: 1.1rem;
+            }
+
+            .card-text {
+                font-size: .8rem;
+                line-height: 1.2rem;
+            }
+        }
+    }
+    
+
+    @media screen and (min-width: $sm-break-point) {
+        
+        .card-deck {
+
+            .card {
+                margin-bottom: 15px;
+            }
+        }
+
+        .element2b {
+            position: absolute;
+            right: -20px;
+            top: 50%;
+        }
+
+    }
+    
+    @media screen and (min-width: $md-break-point) {
+
+        margin-top: 120px;
+
+
+        .card {
+            padding: 50px 0 40px 20px;
+            .card-title {
+                font-size: 1.3rem;
+            }
+
+            .card-text {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+        
+    }
+
+    @media screen and (min-width: $lg-break-point) {
+
+        background: url("../images/aboutus/Vector.png") left top no-repeat;
+        background-size: 800px 647px;
+        background-position: 0 35%;
+
+        .main-content__description-header {
+            font-size: 2rem;
+        }
+
+        .card {
+            padding: 50px 0 40px 40px;
+        }
+        
+    }
+
+    
+}

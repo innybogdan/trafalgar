@@ -1,0 +1,42 @@
+.page-header {
+    
+    margin-top: 20px;
+
+    &__logo-link {
+        display: flex;
+        align-items: center;
+        img {
+            border-radius: 34px;
+            margin-right: 10px;
+        }
+    }
+
+    .main-navigation__list-link:hover {
+        color: $menu-font-color;
+        text-decoration: none;
+    }
+
+    .main-navigation__list-link {
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: $menu-font-color;
+            transition: all .2s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    .main-navigation__list-link--active {
+        font-weight: 700;
+    }
+
+    @media screen and (min-width: $lg-break-point) {
+        margin-top: 40px;
+    }
+    
+}

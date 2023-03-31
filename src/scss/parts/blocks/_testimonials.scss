@@ -1,0 +1,171 @@
+
+.testimonials .container {
+  position: relative;
+  width: 94%;
+}
+
+.element, .element2 {
+  display: none;
+}
+
+.testimonials__description-rectangle {
+  width: 56px;
+  height: 2px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.slider-box {
+  margin: 0 0 0 auto;
+  padding-bottom: 20px;
+  background: rgb(68, 131, 226);
+  background: linear-gradient(360deg, #5A98F2 20%, rgb(199, 239, 255) 100%);
+  border-radius: 20px;
+}
+
+.slider-box h1 {
+    color: $white;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slider-box-img-dots {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.mySlides img {
+
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid $white;
+}
+
+.slide-content-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.slide-content {
+    width: 90%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.slide-content p {
+    font-size: 1rem;
+    line-height: 20px;
+    color: $white;
+    margin-top: 10px;
+}
+
+.col1-img-name h5 {
+    font-size: $main-font-size * 1.2;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    color: $white;
+}
+
+.col1-img-name span {
+    font-size: 1rem;
+    color: $white;
+}
+
+.slide-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #2313fa;
+}
+
+@media screen and (min-width: $md-break-point) {
+
+  .testimonials {
+    margin-top: 60px;
+  }
+
+  .slider-box h1 {
+    font-size: $main-font-size * 2;
+  }
+  
+  .mySlides img {
+    margin-bottom: 0;
+  }
+
+  .slide-content p {
+    width: 75%;
+  }
+
+}
+
+@media screen and (min-width: $lg-break-point) {
+
+  .element, .element2 {
+    display: block;
+  }
+
+  .element {
+    position: absolute;
+    left: -5%;
+    top: 60%;
+  }
+
+  .element2 {
+    position: absolute;
+    right: 0;
+    top: 2%;
+    z-index: 1000;
+  }
+
+  .slider-box {
+    padding: 60px 0 60px 0;
+  }
+
+  .slider-box h1 {
+    margin-top: 0;
+  }
+  
+  .slide-content {
+    flex-direction: row;
+    // justify-content: space-between;
+    margin: 40px auto 0 auto;
+  }
+
+  .slide-content-left {
+    margin-top: 20px;
+  }
+
+  .slide-nav {
+    margin-bottom: 140px;
+  }
+
+
+}
+
+

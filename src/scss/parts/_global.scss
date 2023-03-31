@@ -1,0 +1,111 @@
+body {
+	// font-family: $main-font-family, "Arial", sans-serif;
+	font-family: 'Mulish', sans-serif;
+	font-size: $main-font-size;
+	color: $primary-font-color;
+	line-height: $default-line-height;
+}
+
+// a {
+// 	color: $primary-font-color;
+// 	&:hover {
+// 		color: $primary-special-color;
+// 	}
+// }
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: $menu-font-color;
+}
+
+
+.button {
+	padding: 12px 22px;
+	color: #FFF;
+	font-size: $main-font-size + 1;
+	font-weight: 900;
+	background: #9C69E2;
+	border-radius: 50px;
+	transition: all .4s;
+	
+	&:hover {
+		color: #FFF;
+		background: $secondary-special-font-color;
+	}
+	
+	&--white {
+		color: $primary-font-color;
+		background: #FFF;
+		box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
+	}
+
+	&--blue {
+		color: #fff;
+		background: $primary-color;
+		// box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
+	}
+
+	&--readmore {
+		font-size: $main-font-size * .8;
+		background: transparent;
+		border: none;
+		color: $primary-color;
+		padding-left: 0;
+		
+		&:hover {
+			color: $primary-color;
+			background: #fff;
+		}
+	}
+
+	&--transparent {
+		padding: 8px 40px;
+		color: $primary-color;
+		background: transparent;
+		border: 1px solid $primary-color;
+	}
+	
+	&--arrowed {
+		position: relative;
+		padding-right: 50px;
+		&::after {
+			content: "🡢";
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 20px;
+			height: 20px;
+			font-size: 20px;
+			color: $primary-special-color;
+			line-height: 45%;
+		}
+	}
+	
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

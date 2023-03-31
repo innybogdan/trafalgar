@@ -1,0 +1,100 @@
+.download {
+	
+	&__content {
+		margin-top: 20px;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	&__header, &__text {
+		margin-bottom: 20px;
+	}
+
+	&__header {
+		font-size: 24px;
+		// line-height: 46px;
+	}
+
+	.rectangle--download {
+		margin-bottom: 20px;
+	}
+
+	&__button {
+		img {
+			transform: rotate(90deg);
+			margin-left: 5px;
+		}
+	}
+	
+	.button {
+		display: inline-block;
+	}
+	
+	img {
+		max-height: 200px;
+	}
+
+	@media screen and (min-width: $lg-break-point) {
+		
+		margin-top: 200px;
+
+		//style without Bootstrap
+		// &__container  {
+        // position: relative;
+        // display: flex;
+        // flex-direction: row;
+        // width: $lg-container-width;
+        // height: 40px;
+        // align-items: flex-start;
+        // margin: 0 auto;
+    	// }
+
+		&__content {
+			flex: 0 0 40%;
+			max-width: 40%;
+		}
+
+		.download__text {
+			margin-bottom: 30px;
+		}
+
+		&__header {
+			font-size: 2rem;
+			line-height: 46px;
+		}
+
+		.rectangle--download {
+			margin: 0 0 20px 0;
+		}
+			
+		&__image {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		
+		img {
+			max-height: none;
+		}
+	}
+
+	@media screen and (min-width: $xl-break-point)  {
+
+			&__content {
+				flex: 0 0 40%;
+				max-width: 40%;
+				margin-left: 100px;
+			}
+			
+				&__header {
+					width: 80%;
+				}
+				
+			&__image {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		
+		}
+	
+	
+}

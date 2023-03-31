@@ -1,0 +1,87 @@
+.section-carousel {
+
+    margin-top: 20px;
+
+    .wrapper-carousel {
+        
+        color: #fff;
+        background: linear-gradient(360deg, #5A98F2 20%, rgb(199, 239, 255) 100%);
+        padding: 50px 0;
+        border-radius: 20px;
+
+        .carousel {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            h1 {
+                font-size: 22px;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 36px;
+                }
+            }
+            .carousel-inner {
+                margin: 50px 0 20px 0;
+
+            }
+        }
+    }
+
+    .container {
+        width: 94%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .carousel-item__slide {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            width: 80%;
+            margin-top: 40px;
+        }
+
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+            justify-content: space-around;
+            width: 90%;
+            margin: 0 auto;
+
+            p {
+                width: 60%;
+                margin: 0;
+            }
+        }
+        
+    }
+    
+    .wrapper-img-text {
+        display: flex;
+        align-items: center;
+        
+        img {
+            margin: 0 20px 0 10px;
+        }
+
+        .img-description {
+            width: 200px;
+            padding-top: 20px;
+    
+        }
+    }
+    
+    .white-rectangle {
+        width: 56px;
+        height: 2px;
+        margin: 0 auto;
+        background: #fff;
+    }
+
+    @media screen and (min-width: 768px) {
+            margin-top: 100px;
+    }
+
+}
